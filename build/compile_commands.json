@@ -16,5 +16,11 @@
   "command": "D:\\MinGW-w64\\bin\\g++.exe -Dprocess_EXPORTS @CMakeFiles/process.dir/includes_CXX.rsp -g -o CMakeFiles\\process.dir\\process.cpp.obj -c D:\\Project\\C++\\Planning\\src\\process\\process.cpp",
   "file": "D:/Project/C++/Planning/src/process/process.cpp",
   "output": "src/process/CMakeFiles/process.dir/process.cpp.obj"
+},
+{
+  "directory": "D:/Project/C++/Planning/build/src/show_result",
+  "command": "D:\\MinGW-w64\\bin\\g++.exe -Dshow_result_EXPORTS @CMakeFiles/show_result.dir/includes_CXX.rsp -g -o CMakeFiles\\show_result.dir\\show_result.cpp.obj -c D:\\Project\\C++\\Planning\\src\\show_result\\show_result.cpp",
+  "file": "D:/Project/C++/Planning/src/show_result/show_result.cpp",
+  "output": "src/show_result/CMakeFiles/show_result.dir/show_result.cpp.obj"
 }
 ]

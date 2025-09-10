@@ -72,6 +72,7 @@ CMakeFiles/main.dir/codegen:
 .PHONY : CMakeFiles/main.dir/codegen
 
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/main.cpp.obj: D:/Project/C++/Planning/main.cpp
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Project\C++\Planning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.obj"
@@ -85,51 +86,20 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	D:\MinGW-w64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Project\C++\Planning\main.cpp -o CMakeFiles\main.dir\main.cpp.s
 
-CMakeFiles/main.dir/pnc_map.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/pnc_map.cpp.obj: D:/Project/C++/Planning/pnc_map.cpp
-CMakeFiles/main.dir/pnc_map.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Project\C++\Planning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/pnc_map.cpp.obj"
-	D:\MinGW-w64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/pnc_map.cpp.obj -MF CMakeFiles\main.dir\pnc_map.cpp.obj.d -o CMakeFiles\main.dir\pnc_map.cpp.obj -c D:\Project\C++\Planning\pnc_map.cpp
-
-CMakeFiles/main.dir/pnc_map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/pnc_map.cpp.i"
-	D:\MinGW-w64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Project\C++\Planning\pnc_map.cpp > CMakeFiles\main.dir\pnc_map.cpp.i
-
-CMakeFiles/main.dir/pnc_map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/pnc_map.cpp.s"
-	D:\MinGW-w64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Project\C++\Planning\pnc_map.cpp -o CMakeFiles\main.dir\pnc_map.cpp.s
-
-CMakeFiles/main.dir/process.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/process.cpp.obj: D:/Project/C++/Planning/process.cpp
-CMakeFiles/main.dir/process.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Project\C++\Planning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/process.cpp.obj"
-	D:\MinGW-w64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/process.cpp.obj -MF CMakeFiles\main.dir\process.cpp.obj.d -o CMakeFiles\main.dir\process.cpp.obj -c D:\Project\C++\Planning\process.cpp
-
-CMakeFiles/main.dir/process.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/process.cpp.i"
-	D:\MinGW-w64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Project\C++\Planning\process.cpp > CMakeFiles\main.dir\process.cpp.i
-
-CMakeFiles/main.dir/process.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/process.cpp.s"
-	D:\MinGW-w64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Project\C++\Planning\process.cpp -o CMakeFiles\main.dir\process.cpp.s
-
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.obj" \
-"CMakeFiles/main.dir/pnc_map.cpp.obj" \
-"CMakeFiles/main.dir/process.cpp.obj"
+"CMakeFiles/main.dir/main.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 D:/Project/C++/Planning/bin/main.exe: CMakeFiles/main.dir/main.cpp.obj
-D:/Project/C++/Planning/bin/main.exe: CMakeFiles/main.dir/pnc_map.cpp.obj
-D:/Project/C++/Planning/bin/main.exe: CMakeFiles/main.dir/process.cpp.obj
 D:/Project/C++/Planning/bin/main.exe: CMakeFiles/main.dir/build.make
+D:/Project/C++/Planning/bin/main.exe: libcommon.dll.a
 D:/Project/C++/Planning/bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 D:/Project/C++/Planning/bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 D:/Project/C++/Planning/bin/main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Project\C++\Planning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable D:\Project\C++\Planning\bin\main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Project\C++\Planning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable D:\Project\C++\Planning\bin\main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

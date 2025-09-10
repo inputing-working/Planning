@@ -116,19 +116,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named common
-
-# Build rule for target.
-common: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common
-.PHONY : common
-
-# fast build rule for target.
-common/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/build
-.PHONY : common/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -138,80 +125,34 @@ main: cmake_check_build_system
 
 # fast build rule for target.
 main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\main.dir\build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named pnc_map
 
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+# Build rule for target.
+pnc_map: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pnc_map
+.PHONY : pnc_map
 
-main.i: main.cpp.i
-.PHONY : main.i
+# fast build rule for target.
+pnc_map/fast:
+	$(MAKE) $(MAKESILENT) -f src\pnc_map\CMakeFiles\pnc_map.dir\build.make src/pnc_map/CMakeFiles/pnc_map.dir/build
+.PHONY : pnc_map/fast
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+#=============================================================================
+# Target rules for targets named process
 
-main.s: main.cpp.s
-.PHONY : main.s
+# Build rule for target.
+process: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 process
+.PHONY : process
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-src/pnc_map.obj: src/pnc_map.cpp.obj
-.PHONY : src/pnc_map.obj
-
-# target to build an object file
-src/pnc_map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/pnc_map.cpp.obj
-.PHONY : src/pnc_map.cpp.obj
-
-src/pnc_map.i: src/pnc_map.cpp.i
-.PHONY : src/pnc_map.i
-
-# target to preprocess a source file
-src/pnc_map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/pnc_map.cpp.i
-.PHONY : src/pnc_map.cpp.i
-
-src/pnc_map.s: src/pnc_map.cpp.s
-.PHONY : src/pnc_map.s
-
-# target to generate assembly for a file
-src/pnc_map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/pnc_map.cpp.s
-.PHONY : src/pnc_map.cpp.s
-
-src/process.obj: src/process.cpp.obj
-.PHONY : src/process.obj
-
-# target to build an object file
-src/process.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/process.cpp.obj
-.PHONY : src/process.cpp.obj
-
-src/process.i: src/process.cpp.i
-.PHONY : src/process.i
-
-# target to preprocess a source file
-src/process.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/process.cpp.i
-.PHONY : src/process.cpp.i
-
-src/process.s: src/process.cpp.s
-.PHONY : src/process.s
-
-# target to generate assembly for a file
-src/process.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/process.cpp.s
-.PHONY : src/process.cpp.s
+# fast build rule for target.
+process/fast:
+	$(MAKE) $(MAKESILENT) -f src\process\CMakeFiles\process.dir\build.make src/process/CMakeFiles/process.dir/build
+.PHONY : process/fast
 
 # Help Target
 help:
@@ -221,17 +162,9 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... common
 	@echo ... main
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... src/pnc_map.obj
-	@echo ... src/pnc_map.i
-	@echo ... src/pnc_map.s
-	@echo ... src/process.obj
-	@echo ... src/process.i
-	@echo ... src/process.s
+	@echo ... pnc_map
+	@echo ... process
 .PHONY : help
 
 

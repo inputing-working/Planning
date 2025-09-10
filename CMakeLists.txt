@@ -1,29 +1,16 @@
 cmake_minimum_required(VERSION 3.29.0)
-project(Planning)
+project(Planning
+        VERSION 0.0.1
+        DESCRIPTION "a demo of cmake Planning"
+        HOMEPAGE_URL "https://github.com/inputing-working/Planning"
+        LANGUAGES CXX
+)
+
 set(CMAKE_CXX_STANDARD 17)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
-
-aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LISTS)
-add_library(common
-SHARED
-${SRC_LISTS}
-)
-
-target_include_directories(common
-PUBLIC
-${PROJECT_SOURCE_DIR}/include
-)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(Process_Dir ${CMAKE_SOURCE_DIR}/src/process)
+set(PNC_Map_Dir ${CMAKE_SOURCE_DIR}/src/pnc_map)
 
 
-add_executable(main main.cpp)
-
-target_include_directories(main
-PUBLIC
-${PROJECT_SOURCE_DIR}/include
-)
-
-target_link_libraries(main
-PUBLIC
-common
-)
+add_subdirectory(src)

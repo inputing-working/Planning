@@ -5,7 +5,8 @@
 		"D:/Project/C++/Planning/build/src/cmake_install.cmake",
 		"D:/Project/C++/Planning/build/src/pnc_map/cmake_install.cmake",
 		"D:/Project/C++/Planning/build/src/process/cmake_install.cmake",
-		"D:/Project/C++/Planning/build/src/show_result/cmake_install.cmake"
+		"D:/Project/C++/Planning/build/src/show_result/cmake_install.cmake",
+		"D:/Project/C++/Planning/build/test/map_test/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
